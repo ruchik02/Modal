@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.85rem;
+    font-family: monospace;
+    font-size: 3rem;
+}
+@media screen and (max-width:500px) {
+    h1{
+        font-size: 2rem;
+    }
+    
+}
+.btn{
+    text-transform: uppercase;
+    background: transparent;
+    color: black;
+    padding: 4px 8px;
+    letter-spacing: 1px;
+    display: inline-block;
+    transition: all 0.3s linear;
+    font-size: 1rem;
+    border: 2px solid black;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.btn:hover{
+    color: white;
+    background-color: black;
+    border-color: black;
+}
+.hero{
+    min-height: 100vh;
+    background-image: url('https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701385699.jpg');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+    /* border: 5px solid red; */
+}
+.modal-btn{
+    margin-top: 2rem;
+    background-color: hsl(205, 90%, 76%);
+    border-color: hsl(205, 90%, 76%);
+    color: whitesmoke;
+}
+.modal-btn:hover{
+    background: transparent;
+    color: #49a6e9;
+}
+.modal-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* border: 7px solid purple; */
+    background: rgba(73,166,233,0.5);
+    display: grid;
+    place-items: center;
+    transition: all 0.3s linear;
+    visibility: hidden;
+    z-index: -10;
+}
+.modal-container {
+    background-color: white;
+    border-radius: 5px;
+    /* border: 6px solid yellow; */
+    width: 90vw;
+    height: 30vh;
+    max-width: 620px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+.open-modal{
+    visibility: visible;
+    z-index: 10;
+}
+.close-btn{
+    position: relative;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    background: transparent;
+    border-color: transparent;
+    color:hsl(360, 67%, 44%);
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.close-btn:hover{
+    color: hsl(360, 71%, 66%);
+    transform: scale(1.3);
+}
